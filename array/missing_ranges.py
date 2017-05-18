@@ -22,6 +22,6 @@ def get_range(n1, n2):
     else:
         return str(n1) + "->" + str(n2)
 
-nums = [3, 5, 10, 11, 12, 15, 19]
+nums = [3, 6, 5, 10, 11, 12, 15, 19, 88]
 print("original:", nums)
-print("missing range: ", missing_ranges(nums,0,20))
+print("missing range: ", missing_ranges(nums,1,12))

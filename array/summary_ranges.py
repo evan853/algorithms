@@ -25,3 +25,8 @@ def summary_ranges(nums):
             res.append(str(num))
         i += 1
     return res
+
+
+if __name__ == "__main__":
+    test = [-20,0,1,2,3,8,15,18,19,20,100]
+    print summary_ranges(test)

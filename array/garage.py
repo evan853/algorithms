@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # There is a parking lot with only one empty spot. Given the initial state
 # of the parking lot and the final state. Each step we are only allowed to
 # move a car
@@ -39,11 +40,11 @@ def garage(beg, end):
         i += 1
         if i == len(beg):
             i = 0
-    return moves
+    return "\n"+u"需要"+str(moves)+u"步完成"
 
 if __name__ == "__main__":
-    initial = [1,2,3,0,4]
-    final = [0,3,2,1,4]
+    initial = [1,2,3,0,4,5,6,7,8,9,10]
+    final = [1,4,2,3,0,10,8,9,6,5,7]
     print("initial:", initial)
     print("final:", final)
     print(garage(initial, final))

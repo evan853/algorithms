@@ -15,3 +15,6 @@ def square_root(n,p):
 		guess = (guess + (n / guess)) / 2
 
 	return guess
+
+
+

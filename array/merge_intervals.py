@@ -32,9 +32,10 @@ def print_intervals(intervals):
     print("".join(res))
 
 if __name__ == "__main__":
-    given = [[1,3],[2,6],[8,10],[15,18]]
+    given = [[15,18],[1,3],[2,6],[8,10],[15,18]]
     intervals = []
     for l, r in given:
         intervals.append(Interval(l,r))
+    print intervals
     print_intervals(intervals)
     print_intervals(merge(intervals))
